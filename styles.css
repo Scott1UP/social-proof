@@ -1,0 +1,126 @@
+/* Global styles */
+:root {
+    --bg-body: hsl(0, 0%, 100%) ;
+    --bg-reviews: hsl(300, 43%, 22%);
+    --bg-ratings: hsl(300, 24%, 96%);
+
+    --text-headings: hsl(300, 43%, 22%);
+    --text-body: hsl(303, 10%, 53%);
+    --text-inverse: hsl(0, 0%, 100%);
+    --text-accent: hsl(333, 80%, 67%);
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+body {
+    font-family: 'League Spartan';
+    font-size: 15px;
+    margin: 5rem 1.5rem;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: .8;
+    color: var(--text-headings);
+}
+
+h3 {
+    font-size: 17px;
+    color: var(--text-headings);
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--text-inverse);
+}
+
+/* Element styles */
+.social-proof {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.hero-body {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--text-body);
+}
+
+.ratings-group {
+    display: inherit;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.five-stars {
+    background-image: url('./images/icon-star.svg');
+    background-repeat: space;
+    width: 100px;
+    height: 16px;
+}
+
+.ratings {
+    display: inherit;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    align-items: center;
+    background-color: var(--bg-ratings);
+}
+
+.reviews-group {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 1rem;
+}
+
+.reviews {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 8px;
+    background: var(--bg-reviews);
+}
+
+.profile-and-name {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile {
+    height: 40px;
+    border-radius: 64px;
+}
+
+.verified {
+    font-weight: 400;
+    color: var(--text-accent);
+}
+
+.review-copy {
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--bg-ratings);
+}
