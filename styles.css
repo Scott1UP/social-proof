@@ -135,8 +135,9 @@ h4 {
 
 @media screen and (min-width: 640px) {
     body {
-        margin: 8rem 8rem;
-        background-size: 45%;
+        margin: 8rem 10rem;
+        background: url(./images/bg-pattern-top-desktop.svg) left top no-repeat, url(./images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+        background-size: 40%, 80%;
     }
     
     h1 {
@@ -190,5 +191,17 @@ h4 {
     .reviews-group {
         flex-direction: row;
         gap: 2rem;
+    }
+
+    .reviews {
+        height: fit-content;
+    }
+
+    .rev-two {
+        margin-top: 1rem;
+    }
+
+    .rev-three {
+        margin-top: 2rem;
     }
 }
